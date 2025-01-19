@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import "./App.css";
+
 function App() {
   const [message, setMessage] = useState("");
 
@@ -10,10 +12,13 @@ function App() {
       .catch((error) => console.error("Error:", error));
   }, []);
 
+  console.log(message);
+  console.log("mo");
+
   return (
     <div>
       <h1>Fullstack App</h1>
-      <p>{message}</p>
+      <p className="one">one</p>
     </div>
   );
 }
