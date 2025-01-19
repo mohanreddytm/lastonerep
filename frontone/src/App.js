@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/message")
+    fetch("https://lastonerep-tg16.vercel.app/api/message")
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((error) => console.error("Error:", error));
