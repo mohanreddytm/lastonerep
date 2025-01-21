@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://lastonerep-tg16.vercel.app/api/message")
+    fetch("https://lastonerep-39x9.vercel.app/api/message/")
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((error) => console.error("Error:", error));
@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <h1>Fullstack App</h1>
-      <p className="one">one</p>
+      <p className="one">{message}</p>
     </div>
   );
 }
